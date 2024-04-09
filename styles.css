@@ -1,37 +1,88 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Similar to Instagram's font */
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-image: url('wp4075047.jpg'); /* Replace 'wp4075047.jpg' with your desired background image */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Light text color */
 }
 
 .chat-container {
-    max-width: 600px;
+    max-width: 500px; /* Slightly reduced width for a more compact feel */
     margin: 50px auto;
-    background-color: #fff;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark chat container with transparency */
+    border-radius: 20px; /* Increased border radius */
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Enhanced box shadow */
+    overflow: hidden; /* Hide overflow for a cleaner appearance */
 }
 
 #chat-box {
-    min-height: 200px;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    overflow-y: auto;
+    max-height: 300px; /* Set max height for the chat box */
+    overflow-y: auto; /* Add vertical scrollbar when needed */
+    padding-right: 20px; /* Add padding to prevent content from being hidden behind scrollbar */
 }
 
 #user-input {
     width: calc(100% - 40px);
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #666; /* Darker border */
+    border-radius: 8px; /* Slightly rounded corners */
     font-size: 16px;
+    background-color: #444; /* Dark input background */
+    color: #fff; /* Light text color */
 }
 
 #user-input:focus {
     outline: none;
-    border-color: dodgerblue;
+    border-color: #3897f0; /* Instagram's accent color on focus */
 }
 
+#send-button {
+    margin-left: 10px; /* Add some space between input field and send button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff007f; /* Pink color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#send-button:hover {
+    background-color: #ff0066; /* Darker pink on hover */
+}
+
+/* Audio visualizer styles */
+.audio-visualizer {
+    width: 100%;
+    height: 6px;
+    background-color: #ff007f; /* Pink color */
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.audio-visualizer .bar {
+    width: 2px;
+    height: 100%;
+    background-color: #fff; /* White color */
+    position: absolute;
+    bottom: 0;
+}
+
+.audio-visualizer .bar:nth-child(1) {
+    left: 5%;
+}
+
+.audio-visualizer .bar:nth-child(2) {
+    left: 15%;
+}
+
+.audio-visualizer .bar:nth-child(3) {
+    left: 25%;
+}
+
+/* Add more bars as needed */
