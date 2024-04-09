@@ -4,6 +4,8 @@ class MyGirlfriendBot:
     def __init__(self):
         self.responses = {
             "hi": ["Hey there! 😊", "Hi! 👋", "Hello! 👋"],
+            "aaba ko sita bajni": [" khoi"],
+            "ilam puga paxi ta moji moj hai": ["Nai k ko moj Tya basara ta timi sanga bajjna Maja authyo"],
             "how are you": ["I'm fine, and you? 😊", "I'm doing well, how about you? 😊"],
             "what up": ["Not much, just chilling. How about you? 😊", "Just hanging out. What about you? 😊"],
             "will you marry me": ["Now? 😄", "Let's talk about it later. 😉"],
@@ -41,4 +43,3 @@ class MyGirlfriendBot:
 
 bot = MyGirlfriendBot()
 bot.start_chatting()
-
